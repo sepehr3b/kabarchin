@@ -1,0 +1,148 @@
+<ion-view view-title="بین الملل">
+    <ion-content  ng-controller="FeedControllerInt">
+
+
+
+        <div class="item item-avatar-right item-checkbox animated fadeInRightBig">
+            <img src="img\logo\fars.png">
+            <h2 dir="rtl">خبرگزاری فارس</h2>
+            <label class="checkbox">
+                <input type="checkbox" ng-model="$root.showList">
+            </label>
+        </div>
+
+
+        <div class="list card" ng-if="$root.showList" ng-controller="HomeCtrl" ng-repeat="fars_post in fars_posts">
+
+            <div style="background-color: #009689" class="item item-body animated fadeInUpBig">
+                <h2 dir="rtl" style="text-align: justify">{{fars_post.title}}</h2>
+                <p  style="text-align: justify">{{fars_post.publishedDate}}</p>
+            </div>
+
+            <div class="item item-body animated fadeInLeftBigBig" >
+                <p dir="rtl" style="text-align: justify">{{fars_post.content}}</p>
+            </div>
+
+             <div class="item tabs tabs-secondary tabs-icon-left animated fadeInDownBigBig" style="background-color: wheat">
+                <a class="tab-item" href="#">
+                    <i class="icon ion-link"></i>
+                    Link
+                </a>
+                <a class="tab-item" href="#">
+                    <i class="icon ion-share"></i>
+                    Share
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="item item-avatar-right item-checkbox animated fadeInRightBig">
+            <img src="img\logo\mehr.png">
+            <h2 dir="rtl">خبرگزاری مهر</h2>
+            <label class="checkbox">
+                <input type="checkbox" ng-model="$root.showList2">
+            </label>
+        </div>
+
+
+        <div class="list card" ng-if="$root.showList2" ng-controller="HomeCtrl" ng-repeat="mehr_post in mehr_posts">
+
+            <div style="background-color: #009689" class="item item-body animated fadeInUpBig">
+                <h2 dir="rtl" style="text-align: justify">{{mehr_post.title}}</h2>
+                <p  style="text-align: justify">{{mehr_post.publishedDate}}</p>
+            </div>
+
+            <div class="item item-body animated fadeInLeftBigBig" >
+                <p dir="rtl" style="text-align: justify">{{mehr_post.content}}</p>
+            </div>
+
+             <div class="item tabs tabs-secondary tabs-icon-left animated fadeInDownBigBig" style="background-color: wheat">
+                <a class="tab-item" href="#">
+                    <i class="icon ion-link"></i>
+                    Link
+                </a>
+                <a class="tab-item" href="#">
+                    <i class="icon ion-share"></i>
+                    Share
+                </a>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="item item-avatar-right item-checkbox animated fadeInRightBig">
+            <img src="img\logo\isna.png">
+            <h2 dir="rtl">خبرگزاری ایسنا</h2>
+            <label class="checkbox">
+                <input type="checkbox" ng-model="$root.showList3">
+            </label>
+        </div>
+
+
+        <div class="list card" ng-if="$root.showList3" ng-controller="HomeCtrl" ng-repeat="isna_post in isna_posts">
+
+            <div style="background-color: #009689" class="item item-body animated fadeInUpBig">
+                <h2 dir="rtl" style="text-align: justify">{{isna_post.title}}</h2>
+                <p  style="text-align: justify">{{isna_post.publishedDate}}</p>
+            </div>
+
+            <div class="item item-body animated fadeInLeftBigBig" >
+                <p dir="rtl" style="text-align: justify">{{isna_post.content}}</p>
+            </div>
+
+             <div class="item tabs tabs-secondary tabs-icon-left animated fadeInDownBigBig" style="background-color: wheat">
+                <a class="tab-item" href="#">
+                    <i class="icon ion-link"></i>
+                    Link
+                </a>
+                <a class="tab-item" href="#">
+                    <i class="icon ion-share"></i>
+                    Share
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="item item-avatar-right item-checkbox animated fadeInRightBig">
+            <img src="img\logo\jyc.png">
+            <h2 dir="rtl"> خبرگزاری باشگاه خبرنگاران</h2>
+            <label class="checkbox">
+                <input type="checkbox" ng-model="$root.showList4">
+            </label>
+        </div>
+
+
+        <div class="list card" ng-if="$root.showList4" ng-controller="HomeCtrl" ng-repeat="jyc_post in jyc_posts">
+
+            <div style="background-color: #009689" class="item item-body animated fadeInUpBig">
+                <h2 dir="rtl" style="text-align: justify">{{jyc_post.title}}</h2>
+                <p  style="text-align: justify">{{jyc_post.publishedDate}}</p>
+            </div>
+
+            <div class="item item-body animated fadeInLeftBigBig" >
+                <p dir="rtl" style="text-align: justify">{{jyc_post.content}}</p>
+            </div>
+
+             <div class="item tabs tabs-secondary tabs-icon-left animated fadeInDownBigBig" style="background-color: wheat">
+                <a class="tab-item" href="#">
+                    <i class="icon ion-link"></i>
+                    Link
+                </a>
+                <a class="tab-item" href="#">
+                    <i class="icon ion-share"></i>
+                    Share
+                </a>
+            </div>
+
+        </div>
+
+
+
+    </ion-content>
+</ion-view>
+
+

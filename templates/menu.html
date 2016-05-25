@@ -1,0 +1,108 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar align-title="center" class="bar-calm">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button  ng-controller="PopupCtrl"  class="button button-icon button-clear icon ion-help-circled animated fadeIn" ng-click="showAlert()">
+        </button>
+      </ion-nav-buttons>
+      <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ion-navicon animated fadeIn" menu-toggle="right">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+    <button style="margin-bottom: 60px" ng-controller="UpCtrl"  class="button button-bar-calm-100 button-fab button-fab-bottom-left animated fadeInUpBig" ng-click="scrollTop(scrollTop([]))">
+      <i class="icon ion-chevron-up royal-900"></i>
+    </button>
+    <button ng-controller="UpCtrl"  class="button button-bar-calm-100 button-fab button-fab-bottom-left animated fadeInUpBig" ng-click="scrollBo()">
+      <i class="icon ion-chevron-down royal-900"></i>
+    </button>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="right">
+    <ion-header-bar class="dark-bg expanded" style="background: url('img/def-nw.png'); background-size: cover">
+    </ion-header-bar>
+
+    <ion-content class="stable-bg has-expanded-header" style="background-color: skyblue">
+      <ion-list >
+
+        <ion-item class="item " ng-controller="HomeCtrl" >
+          <h2 style="text-align: right" class="light" dir="rtl">نمایش / پنهان سازی</h2>
+          <label class="checkbox">
+            <input type="checkbox" ng-model="$root.showList"  >
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" ng-model="$root.showList2" >
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" ng-model="$root.showList3" >
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" ng-model="$root.showList4" >
+          </label>
+        </ion-item>
+
+        <ion-item class="item item-avatar-right " menu-close href="#/app/nw" style="text-align: right;height: 100px">
+          <img src="img/bg/rg.jpg">
+          <h2 style="margin-top: 8px" dir="rtl">برگزیده</h2>
+        </ion-item>
+
+        <ion-item class="item item-avatar-right" menu-close href="#/app/paper" style="text-align: right">
+          <img src="img/bg/pp.jpg">
+          <h2 style="margin-top: 8px" dir="rtl">روزنامه</h2>
+        </ion-item>
+
+        <ion-item class="item item-avatar-right" menu-close href="#/app/eco" style="text-align: right">
+        <img src="img/bg/eco.jpg">
+        <h2 style="margin-top: 8px" dir="rtl">اقتصادی</h2>
+      </ion-item>
+
+
+        <ion-item class="item item-avatar-right" menu-close href="#/app/pol"  style="text-align: right">
+          <img src="img/bg/pt.jpg">
+          <h2 dir="rtl">سیاسی</h2>
+        </ion-item>
+
+        <ion-item class="item item-avatar-right" menu-close href="#/app/sol" style="text-align: right">
+          <img src="img/bg/scl.jpg">
+          <h2 dir="rtl">اجتماعی</h2>
+        </ion-item>
+
+        <ion-item class="item item-avatar-right" menu-close href="#/app/spt" style="text-align: right">
+          <img src="img/bg/sp.jpg">
+          <h2 dir="rtl">ورزشی</h2>
+        </ion-item>
+
+        <ion-item class="item item-avatar-right" menu-close href="#/app/cul" style="text-align: right">
+          <img src="img/bg/cal.jpg">
+          <h2 dir="rtl">فرهنگی</h2>
+        </ion-item>
+
+        <ion-item class="item item-avatar-right" menu-close href="#/app/int" style="text-align: right">
+          <img src="img/bg/int.jpg">
+          <h2 dir="rtl">بین الملل</h2>
+        </ion-item>
+
+        <ion-item class="item item-avatar-right" menu-close href="#/app/v3" style="text-align: right">
+          <img src="img/bg/V3.jpg">
+          <h2 dir="rtl">ورزش سه</h2>
+          <p dir="rtl">varzesh3.com</p>
+        </ion-item>
+
+
+        <ion-item class="item item-avatar-right" menu-close href="#/app/about" style="text-align: right">
+        <img src="img/about.png">
+        <h2 dir="rtl">درباره ی ما</h2>
+      </ion-item>
+
+
+
+
+
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
+

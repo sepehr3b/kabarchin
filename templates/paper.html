@@ -1,0 +1,118 @@
+<ion-view view-title="روزنامه">
+    <ion-content  ng-controller="FeedControllerPaper">
+
+
+
+        <div class="item item-avatar-right item-checkbox animated fadeInRightBig">
+            <img src="img\logo\ham.png">
+            <h2 dir="rtl">همشهری آنلاین</h2>
+            <label class="checkbox">
+                <input type="checkbox" ng-model="$root.showList">
+            </label>
+        </div>
+
+
+        <div class="list card" ng-if="$root.showList" ng-controller="HomeCtrl" ng-repeat="ham_post in ham_posts">
+
+            <div style="background-color: #009689" class="item item-body animated fadeInUpBig">
+                <h2 dir="rtl" style="text-align: justify">{{ham_post.title}}</h2>
+                <p  style="text-align: justify">{{ham_post.publishedDate}}</p>
+            </div>
+
+            <div class="item item-body animated fadeInLeftBigBig" >
+                <p dir="rtl" style="text-align: justify">{{ham_post.content}}</p>
+            </div>
+
+             <div class="item tabs tabs-secondary tabs-icon-left animated fadeInDownBigBig" style="background-color: wheat">
+                <a class="tab-item" href="#">
+                    <i class="icon ion-link"></i>
+                    Link
+                </a>
+                <a class="tab-item" href="#">
+                    <i class="icon ion-share"></i>
+                    Share
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="item item-avatar-right item-checkbox animated fadeInRightBig">
+            <img src="img\logo\jam.png">
+            <h2 dir="rtl">جام جم آنلاین</h2>
+            <label class="checkbox">
+                <input type="checkbox" ng-model="$root.showList2">
+            </label>
+        </div>
+
+
+        <div class="list card" ng-if="$root.showList2" ng-controller="HomeCtrl" ng-repeat="jam_post in jam_posts">
+
+            <div style="background-color: #009689" class="item item-body animated fadeInUpBig">
+                <h2 dir="rtl" style="text-align: justify">{{jam_post.title}}</h2>
+                <p  style="text-align: justify">{{jam_post.publishedDate}}</p>
+            </div>
+
+            <div class="item item-body animated fadeInLeftBigBig" >
+                <p dir="rtl" style="text-align: justify">{{jam_post.content}}</p>
+            </div>
+
+             <div class="item tabs tabs-secondary tabs-icon-left animated fadeInDownBigBig" style="background-color: wheat">
+                <a class="tab-item" href="#">
+                    <i class="icon ion-link"></i>
+                    Link
+                </a>
+                <a class="tab-item" href="#">
+                    <i class="icon ion-share"></i>
+                    Share
+                </a>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="item item-avatar-right item-checkbox animated fadeInRightBig">
+            <img src="img\logo\vv.png">
+            <h2 dir="rtl">خبرورزشی</h2>
+            <label class="checkbox">
+                <input type="checkbox" ng-model="$root.showList3">
+            </label>
+        </div>
+
+
+        <div class="list card" ng-if="$root.showList3" ng-controller="HomeCtrl" ng-repeat="vv_post in vv_posts">
+
+            <div style="background-color: #009689" class="item item-body animated fadeInUpBig">
+                <h2 dir="rtl" style="text-align: justify">{{vv_post.title}}</h2>
+                <p  style="text-align: justify">{{vv_post.publishedDate}}</p>
+            </div>
+
+            <div class="item item-body animated fadeInLeftBigBig" >
+                <p dir="rtl" style="text-align: justify">{{vv_post.content}}</p>
+            </div>
+
+             <div class="item tabs tabs-secondary tabs-icon-left animated fadeInDownBigBig" style="background-color: wheat">
+                <a class="tab-item" href="#">
+                    <i class="icon ion-link"></i>
+                    Link
+                </a>
+                <a class="tab-item" href="#">
+                    <i class="icon ion-share"></i>
+                    Share
+                </a>
+            </div>
+
+        </div>
+
+
+
+
+
+    </ion-content>
+
+
+</ion-view>
+
+
